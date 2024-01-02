@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/regisyer_viem.dart';
+import 'package:flutter_application_1/screens/register/regisyer_viem.dart';
 
 class CreateAccountSentence extends StatelessWidget {
-  const CreateAccountSentence({super.key});
-
+  const CreateAccountSentence({super.key, required this.informationText, required this.actionText, this.onPressed});
+final String informationText;
+final String actionText;
+final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return  Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text('if you have not an account'),
+                 Text(informationText),
                 TextButton(
-                    onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const RegisterView()));
-                    },
+                    onPressed: onPressed,
                     child: Text(
-                      'Create one!',
+                      actionText,
                       style: TextStyle(color: Colors.teal[400]),
                     ))
               ],

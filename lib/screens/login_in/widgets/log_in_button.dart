@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/NavigationBar/NavigationExample.dart';
 
 class LogInButton extends StatelessWidget {
-  const LogInButton({super.key});
-
+  const LogInButton({super.key, required this.buttonLabel});
+ final String buttonLabel;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -19,9 +19,9 @@ class LogInButton extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.teal[400]),
-                  child: const Text(
-                    'Login',
-                    style: TextStyle(
+                  child:  Text(
+                    buttonLabel,
+                    style:const TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ));

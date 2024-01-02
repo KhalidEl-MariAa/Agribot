@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ImageAndWelcomeView extends StatelessWidget {
-  const ImageAndWelcomeView({super.key});
-
+  const ImageAndWelcomeView({super.key, required this.welcomePhraseText});
+final String welcomePhraseText;
   @override
   Widget build(BuildContext context) {
     return  Column(
@@ -15,7 +15,7 @@ class ImageAndWelcomeView extends StatelessWidget {
               height: 30,
             ),
             Text(
-              'Welocme to Agribot',
+              welcomePhraseText,
               style: TextStyle(fontSize: 20, color: Colors.teal[400]),
             ),
       ],
