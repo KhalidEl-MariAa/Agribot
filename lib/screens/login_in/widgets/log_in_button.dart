@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/NavigationBar/NavigationExample.dart';
+import 'package:flutter_application_1/NavigationBar/main_page.dart';
 
 class LogInButton extends StatelessWidget {
   const LogInButton({super.key, required this.buttonLabel});
@@ -9,7 +9,7 @@ class LogInButton extends StatelessWidget {
     return GestureDetector(
                 onTap: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) =>  const NavigationExample2(),
+                    builder: (context) =>  const MainPage(),
                   ));
                 },
                 child: Container(

@@ -5,14 +5,14 @@ import 'package:flutter_application_1/NavigationBar/car.dart';
 import 'package:flutter_application_1/home-view.dart';
 import 'package:tflite/tflite.dart';
 
-class NavigationExample2 extends StatefulWidget {
-  const NavigationExample2({super.key});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
 
   @override
-  State<NavigationExample2> createState() => _NavigationExampleState();
+  State<MainPage> createState() => _NavigationExampleState();
 }
 
-class _NavigationExampleState extends State<NavigationExample2> {
+class _NavigationExampleState extends State<MainPage> {
    Future<void> loadModel ()async { // define the function that create the ai model
    await  Tflite.loadModel(
     model:'assets/model_unquant.tflite',
