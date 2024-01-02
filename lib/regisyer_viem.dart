@@ -3,7 +3,7 @@ import 'package:flutter_application_1/NavigationBar/NavigationBar.dart';
 import 'package:flutter_application_1/NavigationBar/NavigationBar.dart';
 import 'package:flutter_application_1/NavigationBar/NavigationExample.dart';
 import 'package:flutter_application_1/home-view.dart';
-import 'package:flutter_application_1/login_view.dart';
+import 'package:flutter_application_1/screens/login_in/login_view.dart';
 import 'package:flutter_application_1/test.dart';
 
 class RegisterView extends StatefulWidget {
